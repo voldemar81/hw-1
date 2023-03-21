@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+   background-image: url(img/Rectangle\ 1.jpg);
+   background-repeat: no-repeat;
+}
