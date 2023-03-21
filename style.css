@@ -10,8 +10,10 @@
 }
 
 .top {
-   background-image: url(img/Rectangle\ 1.jpg);
+   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/Rectangle\ 1.jpg);
    background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
    height: 1240px;
 }
 
@@ -62,4 +64,9 @@ color: #FFFFFF;
 .button:hover {
     background: #EB443F;
 } 
+
+.game-box {
+    background: #000915;
+    height: 556px;
+}
 
