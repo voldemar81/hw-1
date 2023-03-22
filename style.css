@@ -85,7 +85,7 @@ transition: all 3s;
     display: flex;
     gap: 31px;
     flex-wrap: wrap;
-    align-items: flex-end;
+    
 }
 
 
