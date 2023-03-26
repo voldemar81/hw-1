@@ -166,5 +166,76 @@ color: #FFFFFF
 
 }
 
+@media (max-width:767px) {
 
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
+    .top {
+        height: 735px;
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        width: 343px;
+        padding-top: 238px ;
+        padding-left: 0px;
+        text-align: center;
+        
+        }
+
+        .top-content__text {
+            width: 343px;
+            height: 66px;
+            padding-left: 0px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            padding-top: 32px
+            
+            
+            
+        }
+
+            .button-box {
+                padding-left: 0px;
+                padding-top: 32px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .game-box__1 {
+                width: 343px;
+
+            }
+
+            .game-box__2 {
+                width: 343px;
+
+            }
+
+            .game-box__3 {
+                width: 343px;
+
+            }
+
+            .game-box-1 {
+                width: 343px;
+            }
+
+            .game-box-2 {
+                width: 343px;
+            }
+
+            .game-box-3 {
+                width: 343px;
+            }
+            
+
+}
