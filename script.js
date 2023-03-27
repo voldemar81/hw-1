@@ -1,29 +1,29 @@
 /*
-Задача 1
+адача 1
 let a = 20;
 alert(a);
 */
 
 /*
-а = дата создания 1-го iPhone
-let a = 2007;
-alert(a);
+задача 2
+let b = 2007;
+alert(b);
 */
 
 /*
-a = имя создателя JS
-let a = 'Брендан Эйх';
-alert(a);
+задача 3
+let c = 'Брендан Эйх';
+alert(c);
 */
 
 /*
 задача 4
-let a = 10;
-let b = 2;
-alert(a+b); 
-alert(a-b);
-alert(a*b);
-alert(a/b);
+let d = 10;
+let e = 2;
+alert(d+e); 
+alert(d-e);
+alert(d*e);
+alert(d/e);
 */
 
 /*
@@ -34,9 +34,9 @@ alert(result);
 
 /*
 задача 6
-let a = 9;
-let b =2;
-alert(9%2);
+let f = 9;
+let g = 2;
+alert(f%g);
 */
 
 /*
