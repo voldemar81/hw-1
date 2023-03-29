@@ -29,13 +29,15 @@ padding-top: 217px ;
 }
 
 .top-content__text {
+margin-top: 32px;
+margin-bottom: 44px;
 font-style: normal;
 font-weight: 300;
 font-size: 18px;
 line-height: 32px;
 color: #FFFFFF;
 width: 481px;
-padding-top: 32px;
+
 
 }
 
@@ -44,9 +46,6 @@ padding-top: 32px;
     
 }
 
-.button-box {
-    padding-top: 44px;
-}
 
 .button {
 box-sizing: border-box;
@@ -108,22 +107,20 @@ transition: all 3s;
 }
 
 .game-back-style {
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 378px;
     height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 343px;
     display: flex;
     align-items: flex-end;
-    padding-left: 32px;
-    padding-bottom: 32px;
     box-sizing: border-box;
     border-radius: 16px;
-    min-width: 343px;
     transition: all .3s;
+    
 }
 
 .game__option:hover {
-    border: 3px solid;
     border: 3px solid #44D2FF;
     
 }
@@ -146,8 +143,8 @@ transition: all 3s;
     }
 
     &-content {
-       width: 584px;
-
+        max-width: 548px;
+       
     }
 
     &__header {
@@ -173,8 +170,14 @@ transition: all 3s;
 }
 
 .draw-box {
-width: 485px;
-height: 333px;
+    max-width: 485px;
+    max-height: 333px;
+
+    &-mob {
+    display: none;
+        
+   }
+
 }
 
 @media (max-width:767px) {
@@ -185,7 +188,7 @@ height: 333px;
     }
 
     .top {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/Rectangle\ 1\ mob.jpg);
+        background-image: linear-gradient(11deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/Rectangle\ 1\ mob.jpg);
         height: 735px;
     }
 
@@ -194,35 +197,68 @@ height: 333px;
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
-        width: 343px;
         padding-top: 238px ;
-        padding-left: 0px;
         text-align: center;
-        
+        width: fit-content;
     }
 
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
         .top-content__text {
-            width: 343px;
-            height: 66px;
-            padding-left: 0px;
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
             text-align: center;
-            padding-top: 32px
-            
-            
-            
+            width: fit-content;
+                                  
         }
 
-        .button-box {
-            padding-left: 0px;
-            padding-top: 32px;
+        .game-seasons {
+            height: 653px;
+        }
+
+        
+        .game-seasons-box {
+            padding-top: 51px;
+            padding-bottom: 0px;
+            gap: 64px;
+        }
+
+        .game-seasons-content {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
            
-           
+        .game-seasons__header {
+            font-size: 32px;
+            line-height: 39px;
+
+        }
+
+        .game-seasons__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .draw-box {
+           display: none;
+
+           &-mob {
+            margin-bottom: 85px;
+            display: block;
+
+           }
+
+        }
 
 }
