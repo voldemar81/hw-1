@@ -76,3 +76,4 @@ alert(user[info]);
 let name = prompt('Назовите ваше имя')
 alert(`Привет,${name}`);
 */
+

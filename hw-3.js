@@ -45,3 +45,44 @@ switch (monthNumber) {
         break; 
     }
     // задача 5
+
+let evenNumber = prompt('Пожалуйста, введите любое число');
+evenNumber%2 === 0 ? alert("число четное") : ("число нечетное");
+    // задача 7
+
+let clientOS = prompt('Для установки приложения,введите-0 если ваша ОС — iOS, введите-1 если ваша ОС — Android');
+
+switch (clientOS) { 
+    case "0":
+        console.log('Установите версию приложения для iOS по ссылке'); 
+        break;
+    case "1":
+        console.log('Установите версию приложения для Android по ссылке'); 
+        break;
+    default : console.log('GAME OVER');
+        break; 
+    }
+    // задача 8
+
+    
+    let osClient = prompt('Для установки приложения,введите-0 если ваша ОС — iOS, введите-1 если ваша ОС — Android');
+    let deviceYear = prompt(Number('Введите год выпуска устройства'));
+    
+    
+    if (osClient === 0) {
+        deviceYear = prompt('Введите год выпуска устройства');
+        if (deviceYear < 2015) {
+            console.log('Установите облегченную версию приложения для iOS по ссылке');
+        } else {
+            console.log('Установите версию приложения для iOS по ссылке');
+        }
+    } if (osClient === 1) {
+            deviceYear = prompt('Введите год выпуска устройства');
+            if (deviceYear < 2015) {
+                console.log('Установите облегченную версию приложения для Andriod по ссылке');
+            } else {
+                console.log('Установите версию приложения для Andriod по ссылке');
+                   }       
+    }
+
+    // задача 9 -непошла((
