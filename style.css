@@ -198,6 +198,9 @@
     padding-bottom: 0px;
     gap: 64px;
   }
+  .remember {
+    flex-direction: column-reverse;
+  }
   .game-seasons-content {
     display: flex;
     flex-direction: column;
