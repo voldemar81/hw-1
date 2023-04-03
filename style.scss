@@ -231,6 +231,10 @@ transition: all 3s;
             gap: 64px;
         }
 
+        .remember {
+            flex-direction: column-reverse;
+        }
+
         .game-seasons-content {
             display: flex;
             flex-direction: column;
