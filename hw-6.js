@@ -18,16 +18,17 @@ const arr = [1, 3, 5, 10, 20];
 console.log(arr.join(' '));
 // mission 3
 
-let one = [
-    [1, 1, 1], 
-    
-    ];
-    
-    for (let oneIn of one) {
-       for(let element of oneIn) {
-         console.log(one);
-       }  
-    }
+let arrayOne = [];
+for (let h = 0; h < 3; h++) {
+	arrayOne[h] = []; 
+		
+	for (let j = 0; j < 3; j++) {
+		arrayOne[h][j] = 1;
+	}
+}
+	
+console.log(arrayOne);
+
 // mission 4 
 
 const numb = [1, 1, 1];
