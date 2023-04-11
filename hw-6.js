@@ -20,13 +20,12 @@ console.log(arr.join(' '));
 
 let one = [
     [1, 1, 1], 
-    [1, 1, 1], 
-    [1, 1, 1]
+    
     ];
     
     for (let oneIn of one) {
        for(let element of oneIn) {
-        console.log(element);
+         console.log(one);
        }  
     }
 // mission 4 
