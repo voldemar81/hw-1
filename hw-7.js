@@ -2,13 +2,13 @@ const uc = 'привет'
 console.log(uc.toUpperCase());
 // mission 1
 
-const animals = ['Кошка', 'Кит', 'Комар', 'Носорог', 'Тигр','Слон','Собака','Зебра'];
-let search = prompt('Введите запрос');
-animals.forEach((animalsSearch) => {
-	if (animalsSearch.toLowerCase().includes(search.toLowerCase())) {
-		console.log([animalsSearch],(`${search}`));
-	}
-});
+function findWord (array,word) {
+return array.map(el => el.toLowerCase()).filter(el => el.startsWith(word))
+};
+
+const animals = ['Кошка','Кит','Комар','Носорог','Курица','Слон','Собака','Зебра','Килька','Конь','Кукушка','Соболь'];
+
+console.log(findWord(animals,'сл'));
 // mission 2
 
 let n = 32.58884
@@ -24,8 +24,11 @@ console.log(max,min);
 // mission 4
 
 
-const m = Math.round(Math.random([1,2,3,4,5,6,7,8,9,10]));
-console.log(m)
+function getRandom(m) {
+	let ten = m = 10
+	return Math.round(Math.random() * ten);
+  }
+console.log(getRandom());
 // mission 5
 
 
@@ -75,18 +78,19 @@ function words() {
   
 	arr = arr.sort(() => Math.random() - 0.5);
   
-	alert(arr[0] + ' ' + arr[6]);
+	alert(arr);
   
 	let answerOne = String(prompt('Назовите первое слово'));
   
-	let answerTwo = String(prompt('Назовите второе слово'));
+	let answerTwo = String(prompt('Назовите последнее слово'));
   
-	if (answerOne.toLowerCase() == arr[0].toLowerCase() && answer2 == arr[6].toLowerCase()) {
+	if (answerOne == arr[0] && answerTwo == arr[arr.length - 1]) {
 	  alert('Поздравляю, Вы угадали оба слова');
-	} else if (answerTwo.toLowerCase() == arr[0].toLowerCase() || answerTwo == arr[6].toLowerCase()) {
+	} else if (answerOne == arr[0] || answerTwo == arr[arr.length - 1]) {
 	  alert('Вы были близки к победе!');
 	} else {
 	  alert('GAME OVER');
 	}
   }
+
 // mission 11

@@ -15,21 +15,22 @@ function reportSeason() {
     console.log(reportSeason());
 
     function words() {
-        let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+      let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
       
-        arr = arr.sort(() => Math.random() - 0.5);
+      arr = arr.sort(() => Math.random() - 0.5);
       
-        alert(arr[0] + ' ' + arr[6]);
+      alert(arr);
       
-        let answerOne = String(prompt('Назовите первое слово'));
+      let answerOne = String(prompt('Назовите первое слово'));
       
-        let answerTwo = String(prompt('Назовите второе слово'));
+      let answerTwo = String(prompt('Назовите последнее слово'));
       
-        if (answerOne.toLowerCase() == arr[0].toLowerCase() && answer2 == arr[6].toLowerCase()) {
-          alert('Поздравляю, Вы угадали оба слова');
-        } else if (answerTwo.toLowerCase() == arr[0].toLowerCase() || answerTwo == arr[6].toLowerCase()) {
-          alert('Вы были близки к победе!');
-        } else {
-          alert('GAME OVER');
-        }
+      if (answerOne == arr[0] && answerTwo == arr[arr.length - 1]) {
+        alert('Поздравляю, Вы угадали оба слова');
+      } else if (answerOne == arr[0] || answerTwo == arr[arr.length - 1]) {
+        alert('Вы были близки к победе!');
+      } else {
+        alert('GAME OVER');
       }
+      }
+    
